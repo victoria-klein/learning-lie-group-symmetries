@@ -1,0 +1,40 @@
+# @package _global_
+
+# training
+training:
+  num_epochs: 20
+  transition_steps : 1000
+  decay_rate : 0.99
+  end_lr : 0.0001
+  clip : 0.01
+  val: True
+  batch_size : 128
+
+# dataset
+data_dict :
+  type : "normal"
+  std : 2
+  r : 0
+  t : 4
+  s : 1
+  blurring_kernel : 3
+
+# global
+wandb_log : True
+seed : 42
+input_size : 784
+
+# checkpoint
+checkpoint:
+  overwrite_cp : True
+  root : './cp_'
+  store : True
+
+# params
+encoder_cnn: True
+at_steps: [15,2]
+init_std: 0.2
+lambda_lasso : 0
+order : 2
+lr : 0.01
+

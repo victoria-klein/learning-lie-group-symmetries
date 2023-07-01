@@ -1,0 +1,28 @@
+wandb_version: 1
+
+at_steps:
+  value:
+  - 0
+  - 0
+data_dict.blurring_kernel:
+  value: 0
+data_dict.r:
+  value: 5
+data_dict.s:
+  value: 1
+data_dict.std:
+  value: 2
+data_dict.t:
+  value: 1
+data_dict.type:
+  value: normal
+encoder_cnn:
+  value: true
+init_std:
+  value: 0.1
+lambda_lasso:
+  value: 0
+lr:
+  value: 0.05
+order:
+  value: 2

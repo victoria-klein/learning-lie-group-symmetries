@@ -1,0 +1,32 @@
+# @package _global_
+
+# global
+wandb_log: False
+model_name: 'model'
+project_name: 'unnamed'
+seed: 42
+overwrite_cp: True
+
+# checkpoint
+
+checkpoint:
+  root: './cp_'
+  store: True
+
+# training
+
+training:
+  batch_size: 128
+  lr: 0.001
+  num_epochs: 20
+  transition_steps: 1000
+  decay_rate: 0.99
+  end_lr: 0.0001
+
+# other
+
+dataset:
+  noise: 0
+  rotation_type: 'normal'
+  rotation_std: 0
+  r: 20
